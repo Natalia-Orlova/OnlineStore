@@ -1,0 +1,421 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    width: $widthSite;
+    margin: 0 auto;
+}
+
+
+.header{
+    background-color: $backBlock;
+    padding: 20px 235px;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    .logo:hover {
+        transform : scale(1.1);
+    }
+
+    .search:hover {
+        transform : scale(1.1);
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .header__link-site:hover {
+        transform : scale(1.1);
+    }
+
+    .header__menu:hover {
+        transform: scale(1.1);
+    }
+}
+
+.top-head {
+    background:  #F8F3F4;
+    padding: 60px 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__heading {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $colorSelectSite;
+    }
+
+    .breadcrumbs {
+        display: flex;
+        gap: 10px;
+
+        &__link {
+            color: #636363;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__link:hover {
+            color: $colorSelectSite;
+        }
+        
+        &__link_site {
+            font-weight: 700;
+            color: $colorSelectSite;
+        }
+
+        &__link_site:hover {
+            text-shadow: 1px 1px 1px $colorText;
+        }
+    }
+}
+
+.slider__box {
+    padding-top: 11px;
+    padding-bottom: 42px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+
+    .slider__arrow{
+        padding: 8px;
+        background-color: rgba(42, 42, 42, 0.15); 
+
+        .slider__left:hover path{
+            stroke: black;
+        }
+
+        .slider__right:hover path {
+            fill: rgb(194, 15, 89);
+        }
+    }
+   
+}
+
+.product__card {
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    margin-bottom: 129px;
+
+    .section__name {
+        color: $colorSelectSite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+
+    &-name {
+        color: #4D4D4D;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 12px;
+        margin-bottom: 48px;
+    }
+
+    &-text {
+        color: #5E5E5E;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        max-width: 555px;
+        margin-bottom: 32px;
+    }
+
+    &-price {
+        color: #EF5B70;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 65px;
+    }
+
+    &-menu {
+        margin-top: 65px;
+        display: flex;
+        gap:23px;
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 48px;
+        transition: 0.3s;
+    }
+
+    &-link:hover {
+        text-shadow: 1px 1px 1px $colorText;
+    }
+
+    &-link:hover svg path {
+        stroke: $colorText;
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        padding: 16px 56px 16px 24px;
+        border: 1px solid #FF6A6A;
+        color: #F26376;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+    }
+
+    &-button:hover {
+        background-color: $colorSelectSite;
+        color: #fff;
+    }
+
+    &-button:hover svg path {
+        fill: #fff;
+        transition: 0.3s;
+    }
+}
+
+.product-box {
+    display: flex;
+    justify-content: center;
+    gap: $gapGrid;
+    margin-bottom: 128px;
+}
+
+.product {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        background-color: #F8F8F8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__name {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $colorText;
+    }
+
+    &__name:hover {
+        text-shadow: 1px 1px 1px $colorText;
+    }
+
+    &__text {
+        color: #5D5D5D;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__price {
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.subscribe {
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    padding : 87px;
+    padding-bottom: 126px;
+    background : url(img/subscribe_background.webp) no-repeat lightgray;
+
+    .guide {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &__text {
+            color: $subscribeText;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+    
+            &_italic {
+                color: $subscribeText;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    &__box {
+        display : flex;
+        flex-direction : column;
+        gap: 27px;
+    }
+
+    &__title {
+        color : $subscribeText;
+        text-align : center;
+        font-size : 24px;
+        font-style : normal;
+        font-weight : 700;
+        line-height : normal;
+    }
+        
+    &__subtitle {
+        color : $subscribeText;
+        text-align : center;
+        font-size : 18px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : normal;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .email__input {
+        max-width : 256px;
+        padding : 16px 64px 16px 22px;
+        background-color : #E1E1E1;
+        border-top-left-radius : 20px;
+        border-bottom-left-radius : 20px;
+        opacity : 0.6;
+        border : none;
+        outline : none;
+        margin : 0;
+    }
+        
+    .email__input::placeholder {
+        color : $subscribeText;
+        font-size : 14px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : 17px;
+    }
+        
+    .sub_btn {
+        max-width : 100px;
+        padding : 15px 7px 15px 8px;
+        border-top-right-radius : 20px;
+        border-bottom-right-radius : 20px;
+        background-color : $colorSelectSite;
+        border : none;
+        color : #FFF;
+        text-align : center;
+        font-size : 14px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : 17px;
+        transition : 0.3s;
+    }
+        
+    .sub_btn:hover {
+        background-color: #f1afaf;
+        color: #c73649;
+    }
+}
+
+.contacts {
+    background-color: $backBlock;
+    padding: 24px 230px 23px 235px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+        color : #FBFBFB;
+        font-size : 16px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : normal;
+        max-width : 332px;
+    }
+        
+    .social__icons {
+        display : flex;
+        flex-direction : row;
+        gap : 7px;
+    }
+        
+    .contacts__icon {
+        width : 32px;
+        height : 32px;
+        background-color : #FFF;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        transition : 0.3s;
+    }
+        
+    .contacts__icon:hover {
+        background-color : $colorSelectSite;
+    }
+}
+    
