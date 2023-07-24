@@ -97,6 +97,267 @@ a {
     }
 }
 
+.top {
+    display : flex;
+    justify-content : space-between;
+    background-color : #F1E4E6;
+    margin-bottom : 65px;
+
+    &__title {
+        display : flex;
+        align-items : center;
+        text-transform : uppercase;
+        margin-right : 331px;
+    }
+
+    &__line {
+        margin-right : 16px;
+    }
+
+    .title {
+        font-size : 48px;
+        font-style : normal;
+        font-weight : 900;
+        line-height : normal;
+    }
+
+    .subtitle {
+        font-size : 32px;
+        font-style : normal;
+        font-weight : 700;
+        line-height : normal;
+    }
+        
+    .colored__text {
+        color : $colorSelectSite;
+    }
+}
+
+.offers {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    gap : 30px;
+    margin-bottom : 96px;
+
+    &__top {
+        display : flex;
+        gap : 30px;
+    }
+        
+    &__item {
+        position : relative;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+    }
+    
+    &__img {
+        width: 100%;
+    }
+        
+    &__text {
+        position : absolute;
+        text-transform : uppercase;
+    }
+        
+    .white__text {
+        color : #FFF;
+        text-align : center;
+        font-size : 16px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : normal;
+    }
+        
+    &__link {
+        color : $colorSelectSite;
+        font-size : 24px;
+        text-align : center;
+        font-style : normal;
+        font-weight : 400;
+        line-height : normal;
+    }
+        
+    &__link:hover {
+        color : #ee0827d0;
+    }
+}
+
+.content__title {
+    color : $subscribeText;
+    font-size : 30px;
+    font-style : normal;
+    font-weight : 400;
+    line-height : normal;
+    text-align : center;
+}
+    
+.content__subtitle {
+    color : #9F9F9F;
+    font-size : 14px;
+    font-style : normal;
+    font-weight : 400;
+    line-height : normal;
+    text-align : center;
+}
+
+.product-box-main {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gapGrid;
+
+    .product:hover .product__image {
+        filter : brightness(0.5);
+    }
+        
+    .product:hover .product__add {
+        display : flex;
+    }
+        
+    .product__add {
+        position : absolute;
+        top : 188px;
+        left : 111px;
+        border : #fff solid 1px;
+        width : 139px;
+        height : 44px;
+        font-style : normal;
+        font-weight : 400;
+        font-size : 14px;
+        line-height : 17px;
+        display : none;
+        align-items : center;
+        justify-content : center;
+        gap : 11px;
+        color : #FFFFFF;
+    }
+        
+    .product__add:hover {
+        box-shadow : 0 0 5px #fff;
+    }
+        
+    .product__add:hover svg path {
+        fill : $colorSelectSite;
+    }
+}
+
+.product {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        background-color: #F8F8F8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__name {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $colorText;
+    }
+
+    &__name:hover {
+        text-shadow: 1px 1px 1px $colorText;
+    }
+
+    &__text {
+        color: #5D5D5D;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__price {
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.content__btn {
+    display : flex;
+    justify-content : center;
+    margin-bottom : 60px;
+
+    .btn {
+        color : $colorButton;
+        font-size : 16px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : normal;
+        padding : 14px 39px 15px 39px;
+        background : #FFF;
+        border : $colorSelectSite solid 1px;
+        transition : all 0.3s;
+    }
+        
+    .btn:hover {
+        color : #fff;
+        background-color : $colorButton;
+    }
+}
+
+.features {
+    background-color : $backBlock;
+    display : flex;
+    justify-content : center;
+    gap : $gapGrid;
+    padding-top : 104px;
+    padding-bottom : 104px;
+
+    &__item {
+        width : 360px;
+        display : flex;
+        flex-direction : column;
+        align-items : center;
+    }
+        
+    &__img {
+        margin-bottom : 25px;
+    }
+        
+    &__img_sale {
+        margin-bottom : 19px;
+    }
+        
+    &__heading {
+        color : $colorWhite;
+        font-size : 20px;
+        font-style : normal;
+        font-weight : 400;
+        line-height : 24px;
+        margin-bottom : 16px;
+    }
+        
+    &__desc {
+        color : $colorWhite;
+        text-align : center;
+        font-size : 14px;
+        font-style : normal;
+        font-weight : 300;
+        line-height : 17px;
+        max-width : 360px;
+    }
+}
+   
 .slider__box {
     padding-top: 11px;
     padding-bottom: 42px;
@@ -206,7 +467,7 @@ a {
         gap: 23px;
         padding: 16px 56px 16px 24px;
         border: 1px solid #FF6A6A;
-        color: #F26376;
+        color: $colorButton;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -230,52 +491,6 @@ a {
     justify-content: center;
     gap: $gapGrid;
     margin-bottom: 128px;
-}
-
-.product {
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-
-    &__image {
-        width: 100%;
-    }
-
-    &__content {
-        background-color: #F8F8F8;
-        padding: 24px 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    &__name {
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        color: $colorText;
-    }
-
-    &__name:hover {
-        text-shadow: 1px 1px 1px $colorText;
-    }
-
-    &__text {
-        color: #5D5D5D;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    }
-
-    &__price {
-        color: $colorSelectSite;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
 }
 
 .subscribe {
@@ -390,7 +605,7 @@ a {
     align-items: center;
 
     .copyright {
-        color : #FBFBFB;
+        color : $colorWhite;
         font-size : 16px;
         font-style : normal;
         font-weight : 400;
