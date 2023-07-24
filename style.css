@@ -564,4 +564,193 @@ a {
 }
 .contacts .contacts__icon:hover {
   background-color: #F16D7F;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .top {
+    padding-right: 33px;
+    margin-bottom: 65px;
+  }
+  .photo {
+    min-width: 48%;
+  }
+  .title {
+    font-size: 44px;
+    min-width: 283px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .offers {
+    height: 303px;
+    gap: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 110px;
+  }
+  .offers__img {
+    max-width: 100%;
+  }
+  .content__header {
+    margin-bottom: 73px;
+  }
+  .product-box-main {
+    gap: 16px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 33px;
+  }
+  .product {
+    width: 48%;
+  }
+  .product__image {
+    width: 100%;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .subscribe {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding-left: 14%;
+    padding-right: 14%;
+    background-position: -230px center;
+    background-size: cover;
+    padding-top: 53px;
+    padding-bottom: 140px;
+  }
+  .subscribe__box {
+    gap: 27px;
+  }
+  .contacts {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .center {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .header__link-site {
+    display: none;
+  }
+  .top {
+    padding: 41% 0%;
+    margin-bottom: 64px;
+  }
+  .top .photo {
+    display: none;
+    justify-content: center;
+  }
+  .top__title {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .top .title {
+    font-size: 38px;
+  }
+  .top .subtitle {
+    font-size: 20px;
+  }
+  .offers {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 64px;
+  }
+  .offers__top {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .offers__item, .offers__img {
+    width: 100%;
+  }
+  .offers .img__long {
+    display: none;
+  }
+  .offers .item__long {
+    background-image: url(img/offers_accesories.avif);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 111px;
+  }
+  .content__header {
+    margin-bottom: 64px;
+  }
+  .product-box-main {
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 16px;
+    margin-bottom: 41px;
+  }
+  .product {
+    width: 100%;
+  }
+  .product__image {
+    width: 100%;
+  }
+  .content__btn {
+    margin-bottom: 85px;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+    padding-top: 48px;
+    padding-bottom: 81px;
+  }
+  .features__item {
+    width: 93%;
+  }
+  .subscribe {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 59px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-position: -500px;
+    background-size: cover;
+    padding-top: 53px;
+    padding-bottom: 140px;
+  }
+  .subscribe .guide__text {
+    font-size: 18px;
+  }
+  .subscribe__subtitle {
+    font-size: 14px;
+  }
+  .subscribe__box {
+    gap: 22px;
+  }
+  .subscribe .email__input {
+    padding: 16px 30px 16px 21px;
+  }
+  .contacts {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */
