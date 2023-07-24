@@ -203,9 +203,7 @@ a {
 }
 
 .product-box-main {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    width: 1140px;
+    padding: 48px 230px;
     display: flex;
     flex-wrap: wrap;
     gap: $gapGrid;
