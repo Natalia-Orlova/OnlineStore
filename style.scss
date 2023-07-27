@@ -380,7 +380,7 @@ a {
     margin-bottom : 60px;
 
     .btn {
-        color : $colorButton;
+        color : $colorSelectSite;
         font-size : 16px;
         font-style : normal;
         font-weight : 400;
@@ -393,7 +393,7 @@ a {
         
     .btn:hover {
         color : #fff;
-        background-color : $colorButton;
+        background-color : $colorSelectSite;
     }
 }
 
@@ -548,8 +548,8 @@ a {
         align-items: center;
         gap: 23px;
         padding: 16px 56px 16px 24px;
-        border: 1px solid #FF6A6A;
-        color: $colorButton;
+        border: 1px solid $colorSelectSite;
+        color: $colorSelectSite;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
