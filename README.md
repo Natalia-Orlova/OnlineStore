@@ -20,8 +20,8 @@
    5. Адаптив создавать не нужно, только десктопную версию <br>
 
    <style>
-   summary {
-      font-size: 24px;
+      summary {
+         font-size: 24px;
    </style>
 
 </details>
