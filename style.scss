@@ -856,6 +856,42 @@ a {
 }
 
 
+//ПАГИНАЦИЯ
+
+.swiper {
+    margin-bottom: 96px;
+  }
+
+  .swiper-slide {
+   margin-bottom: 80px;
+  }
+
+  .swiper-pagination {
+    max-width: 284px;
+    margin-left: 414px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    border: 1px solid #EBEBEB;
+  }
+  
+  .swiper-pagination-bullet {
+    padding: 7px;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $colorSelectSite;
+    background: #007aff;
+  }
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .center {
         width: 100%;

@@ -333,7 +333,7 @@ a {
   margin-bottom: 60px;
 }
 .content__btn .btn {
-  color: #F26376;
+  color: #F16D7F;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -345,7 +345,7 @@ a {
 }
 .content__btn .btn:hover {
   color: #fff;
-  background-color: #F26376;
+  background-color: #F16D7F;
 }
 
 .features {
@@ -481,8 +481,8 @@ a {
   align-items: center;
   gap: 23px;
   padding: 16px 56px 16px 24px;
-  border: 1px solid #FF6A6A;
-  color: #F26376;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -754,6 +754,39 @@ a {
   z-index: 1;
   left: -9px;
   top: 20px;
+}
+
+.swiper {
+  margin-bottom: 96px;
+}
+
+.swiper-slide {
+  margin-bottom: 80px;
+}
+
+.swiper-pagination {
+  max-width: 284px;
+  margin-left: 414px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border: 1px solid #EBEBEB;
+}
+
+.swiper-pagination-bullet {
+  padding: 7px;
+  color: #c4c4c4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.swiper-pagination-bullet-active {
+  color: #F16D7F;
+  background: #007aff;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
