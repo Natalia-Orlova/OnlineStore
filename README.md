@@ -21,8 +21,3 @@
 
 </details>
 
- <style>
-      summary {
-         font-size: 24px;
-      }
- </style>
