@@ -874,24 +874,24 @@ a {
          justify-content: center;
          gap: 16px;
          align-items: center;
-         padding-top: 12px;
-         padding-bottom: 16px;
+         padding: 12px;
          border: 1px solid #EBEBEB;
        }
        
        .swiper-pagination-bullet {
          width: 25px;
          height: 25px;
-         color: #c4c4c4;
+         color: #C4C4C4;
+         opacity: 100;
          font-size: 16px;
          font-style: normal;
          font-weight: 300;
          line-height: normal;
+         background: none !important;
        }
      
        .swiper-pagination-bullet-active {
-         color: #fff;
-         background: $colorSelectSite !important;
+         color: $colorSelectSite;
        }
 
        .swiper-button-next {
