@@ -84,7 +84,7 @@ a {
     width: 232px;
     padding: 32px;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 82px;
     right: -$widthBurgerMenu;
     transition: right 0.3s;
@@ -765,6 +765,15 @@ a {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        transition: 0.3s;
+    }
+
+    &__heading:hover {
+        color: $colorSelectSite;
+    }
+
+    &__summary:hover path {
+        fill: $colorSelectSite;
     }
 
     &__item {
@@ -839,7 +848,17 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: 0.3s;
    }
+
+   &__heading:hover {
+    color: $colorSelectSite;
+    }
+
+   &__summary:hover path {
+    color: $colorSelectSite;
+    fill: $colorSelectSite;
+    }
 
    &__box {
     display: flex;
@@ -849,51 +868,47 @@ a {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     padding: 7px 30px 11px 9px;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     left: -9px;
     top: 20px;
    }
 }
 
-
 //ПАГИНАЦИЯ
-
 .swiper {
     margin-bottom: 96px;
+    
+    .swiper-slide {
+        margin-bottom: 80px;
+       }
+     
+       .swiper-pagination {
+         max-width: 284px;
+         margin-left: 414px;
+         display: flex;
+         justify-content: center;
+         gap: 16px;
+         align-items: center;
+         padding-top: 12px;
+         padding-bottom: 16px;
+         border: 1px solid #EBEBEB;
+       }
+       
+       .swiper-pagination-bullet {
+         width: 25px;
+         height: 25px;
+         color: #c4c4c4;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 300;
+         line-height: normal;
+       }
+     
+       .swiper-pagination-bullet-active {
+         color: #fff;
+         background: $colorSelectSite !important;
+       }
   }
-
-  .swiper-slide {
-   margin-bottom: 80px;
-  }
-
-  .swiper-pagination {
-    max-width: 284px;
-    margin-left: 414px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 12px;
-    padding-bottom: 16px;
-    border: 1px solid #EBEBEB;
-  }
-  
-  .swiper-pagination-bullet {
-    padding-right: 15px;
-    padding-bottom: 22px;
-    padding-left: 5px;
-    color: #c4c4c4;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border-radius: 15px;
-  }
-
-  .swiper-pagination-bullet-active {
-    color: $colorSelectSite;
-    background-color: #007aff;
-  }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .center {

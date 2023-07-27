@@ -74,7 +74,7 @@ a {
   width: 232px;
   padding: 32px;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   top: 82px;
   right: -232px;
   transition: right 0.3s;
@@ -679,6 +679,13 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: 0.3s;
+}
+.filter__heading:hover {
+  color: #F16D7F;
+}
+.filter__summary:hover path {
+  fill: #F16D7F;
 }
 .filter__item {
   margin-top: 16px;
@@ -742,6 +749,14 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: 0.3s;
+}
+.sort__heading:hover {
+  color: #F16D7F;
+}
+.sort__summary:hover path {
+  color: #F16D7F;
+  fill: #F16D7F;
 }
 .sort__box {
   display: flex;
@@ -751,7 +766,7 @@ a {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 7px 30px 11px 9px;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   left: -9px;
   top: 20px;
 }
@@ -759,37 +774,32 @@ a {
 .swiper {
   margin-bottom: 96px;
 }
-
-.swiper-slide {
+.swiper .swiper-slide {
   margin-bottom: 80px;
 }
-
-.swiper-pagination {
+.swiper .swiper-pagination {
   max-width: 284px;
   margin-left: 414px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 16px;
   align-items: center;
   padding-top: 12px;
   padding-bottom: 16px;
   border: 1px solid #EBEBEB;
 }
-
-.swiper-pagination-bullet {
-  padding-right: 15px;
-  padding-bottom: 22px;
-  padding-left: 5px;
+.swiper .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
   color: #c4c4c4;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  border-radius: 15px;
 }
-
-.swiper-pagination-bullet-active {
-  color: #F16D7F;
-  background-color: #007aff;
+.swiper .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #F16D7F !important;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
