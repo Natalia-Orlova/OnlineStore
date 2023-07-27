@@ -776,17 +776,20 @@ a {
 }
 
 .swiper-pagination-bullet {
-  padding: 7px;
+  padding-right: 15px;
+  padding-bottom: 22px;
+  padding-left: 5px;
   color: #c4c4c4;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  border-radius: 15px;
 }
 
 .swiper-pagination-bullet-active {
   color: #F16D7F;
-  background: #007aff;
+  background-color: #007aff;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
