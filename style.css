@@ -155,6 +155,9 @@ a {
 .top-head .breadcrumbs__link_site:hover {
   text-shadow: 1px 1px 1px #000;
 }
+.top-head .breadcrumbs__link:not(:last-child)::after {
+  content: " /";
+}
 
 .top {
   display: flex;

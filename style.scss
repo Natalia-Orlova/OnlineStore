@@ -178,6 +178,10 @@ a {
             text-shadow: 1px 1px 1px $colorText;
         }
     }
+
+    .breadcrumbs__link:not(:last-child)::after {
+        content: " /";
+    }
 }
 
 .top {
