@@ -1022,8 +1022,9 @@ a {
     }
     
     .top {
-        padding : 41% 0%;
+        padding : 41% 2%;
         margin-bottom : 64px;
+        
 
         .photo {
             display : none;
@@ -1031,9 +1032,7 @@ a {
         }
 
         &__title {
-            width : 100%;
-            margin-right : 0;
-            justify-content : center;
+            margin-right: 0;
         }
 
         .title {
