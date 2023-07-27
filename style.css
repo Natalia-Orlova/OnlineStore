@@ -158,18 +158,18 @@ a {
 
 .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   background-color: #F1E4E6;
   margin-bottom: 65px;
 }
 .top__title {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   text-transform: uppercase;
-  margin-right: 331px;
-}
-.top__line {
-  margin-right: 16px;
+  margin-right: 48px;
+  padding-left: 16px;
+  border-left: 12px solid #F16D7F;
 }
 .top .title {
   font-size: 48px;
