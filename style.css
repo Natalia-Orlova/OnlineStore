@@ -390,24 +390,15 @@ a {
   padding-top: 11px;
   padding-bottom: 42px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #F7F7F7;
-}
-.slider__box .slider__arrow {
-  padding: 8px;
-  background-color: rgba(42, 42, 42, 0.15);
-}
-.slider__box .slider__arrow .slider__left:hover path {
-  stroke: black;
-}
-.slider__box .slider__arrow .slider__right:hover path {
-  fill: rgb(194, 15, 89);
 }
 
 .product__card {
   position: relative;
-  margin-top: -60px;
+  margin-top: -240px;
+  z-index: 1;
   width: 71%;
   display: flex;
   flex-direction: column;
@@ -800,6 +791,24 @@ a {
 .swiper .swiper-pagination-bullet-active {
   color: #fff;
   background: #F16D7F !important;
+}
+.swiper .swiper-button-next {
+  color: #F16D7F !important;
+  padding: 30px;
+  background-color: rgba(42, 42, 42, 0.15);
+  transition: 0.3s;
+}
+.swiper .swiper-button-prev {
+  color: rgba(37, 35, 35, 0.6862745098) !important;
+  padding: 30px;
+  background-color: rgba(42, 42, 42, 0.15);
+  transition: 0.3s;
+}
+.swiper .swiper-button-prev:hover {
+  color: #000000 !important;
+}
+.swiper .swiper-button-next:hover {
+  color: #ad3f4e !important;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
