@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
 summary {
     display: block;
   }
@@ -927,6 +936,245 @@ a {
             
         }
 }
+
+//КОРЗИНА
+
+.cart__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 72px;
+
+        .product__item {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            height: 306px;
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+            &_delete {
+                position: absolute;
+                top: 28px;
+                right: 22px;
+                transition:all 0.3s;
+            }
+
+            &_delete:hover{
+                // fill: $colorSelectSite;
+                transform: rotate(90deg);
+            }
+        }
+
+        .product__desc {
+            width: 390px;
+            padding-top: 22px;
+            padding-left: 31px;
+
+            .cart__product_name {
+                color: #222;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 42px;
+            }
+
+            .product__details-box {
+                color: #575757;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .product_details {
+                color: #6F6E6E;
+            }
+
+            .count_input {
+                width: 44px;
+                border: 1px solid #EAEAEA;
+                background-color: #fff;
+                outline: none;
+                font-size: 18px;
+                text-align: right;
+                margin-left: 24px;
+            } 
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-btn {
+        padding: 16px 40px;
+        border: 1px solid #A4A4A4;
+        background-color: #fff;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        transition: all 0.3s;
+    }
+
+    &-btn:hover {
+        background-color: $colorSelectSite;
+        color: #fff;
+    }
+
+    &__right {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        padding-top: 17px;
+
+        .address__form {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            &__heading {
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            &_input {
+                padding: 12px 15px 16px;
+                background-color: #fff;
+                border: 1px solid #A4A4A4;
+                outline: none;                 
+            }
+
+            
+            &_input::placeholder {
+                color: #222;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+            }
+
+            .city-input::placeholder {
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+            }
+
+            &_btn {
+                padding: 11px;
+                width:100px;
+                background-color: #fff;
+                border: 1px solid #A4A4A4;
+                color: #4A4A4A;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                transition: all 0.3s;
+            }
+
+            &_btn:hover {
+                background-color: $colorSelectSite;
+                color: #fff;
+            }
+        }
+
+        .total__price-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 39px;
+            padding-bottom: 42px;
+            background-color: #F5F3F3;  
+
+            .price {
+                display: flex;
+                flex-direction: column;
+                align-items:end;
+                width: 275px;
+                padding-bottom: 21px;
+                border-bottom: 1px solid #E2E2E2;
+            }
+            
+            .subtotal_price {
+                display: flex;
+                justify-content: space-between;
+                text-align: right;
+                width: 108px;
+    
+                .price-text {
+                    color: #4A4A4A;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 12px; 
+                }
+                
+            }
+
+            .total_price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 170px;
+    
+                .total-text {
+                    color: $subscribeText;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+    
+                .total-sum {
+                    color: $colorSelectSite;
+                    font-weight: 700;
+                }
+            }
+
+            .checkout_btn {
+                padding: 16px 42px;
+                background-color: $colorSelectSite;
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-top: 17px;
+                transition: all 0.3s;
+            }
+
+            .checkout_btn:hover {
+                text-shadow: 1px 1px 2px #000;;
+                box-shadow: 1px 1px 2px #000;
+
+            }
+        }
+
+        
+
+        
+        
+        
+    }
+}
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .center {
