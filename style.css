@@ -942,17 +942,11 @@ a {
   font-style: normal;
   font-weight: 300;
 }
-.cart__content__right .address__form .city-input::-moz-placeholder {
+.cart__content__right .address__form_input:focus::-moz-placeholder {
   color: #B1B1B1;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 300;
 }
-.cart__content__right .address__form .city-input::placeholder {
+.cart__content__right .address__form_input:focus::placeholder {
   color: #B1B1B1;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 300;
 }
 .cart__content__right .address__form_btn {
   padding: 11px;

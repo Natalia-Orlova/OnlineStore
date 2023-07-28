@@ -1062,7 +1062,6 @@ a {
                 outline: none;                 
             }
 
-            
             &_input::placeholder {
                 color: #222;
                 font-size: 13px;
@@ -1070,11 +1069,8 @@ a {
                 font-weight: 300;
             }
 
-            .city-input::placeholder {
+            &_input:focus::placeholder {
                 color: #B1B1B1;
-                font-size: 13px;
-                font-style: normal;
-                font-weight: 300;
             }
 
             &_btn {
