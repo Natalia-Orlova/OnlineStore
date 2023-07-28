@@ -135,7 +135,6 @@ a {
 }
 .top-head .breadcrumbs {
   display: flex;
-  gap: 10px;
 }
 .top-head .breadcrumbs__link {
   color: #636363;
@@ -148,15 +147,16 @@ a {
 .top-head .breadcrumbs__link:hover {
   color: #F16D7F;
 }
-.top-head .breadcrumbs__link_site {
-  font-weight: 700;
-  color: #F16D7F;
-}
 .top-head .breadcrumbs__link_site:hover {
   text-shadow: 1px 1px 1px #000;
 }
 .top-head .breadcrumbs__link:not(:last-child)::after {
-  content: " /";
+  content: "/";
+  padding: 0 8px;
+}
+.top-head .breadcrumbs__link:last-child {
+  font-weight: 700;
+  color: #F16D7F;
 }
 
 .top {

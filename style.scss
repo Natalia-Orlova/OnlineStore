@@ -154,7 +154,7 @@ a {
 
     .breadcrumbs {
         display: flex;
-        gap: 10px;
+        
 
         &__link {
             color: #636363;
@@ -169,10 +169,10 @@ a {
             color: $colorSelectSite;
         }
         
-        &__link_site {
-            font-weight: 700;
-            color: $colorSelectSite;
-        }
+        // &__link_site {
+        //     font-weight: 700;
+        //     color: $colorSelectSite;
+        // }
 
         &__link_site:hover {
             text-shadow: 1px 1px 1px $colorText;
@@ -180,7 +180,13 @@ a {
     }
 
     .breadcrumbs__link:not(:last-child)::after {
-        content: " /";
+        content: "/";
+        padding: 0 8px;
+    }
+
+    .breadcrumbs__link:last-child {
+        font-weight: 700;
+        color: $colorSelectSite;
     }
 }
 
