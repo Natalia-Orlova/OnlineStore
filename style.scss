@@ -1006,6 +1006,10 @@ a {
                 text-align: right;
                 margin-left: 24px;
             } 
+
+            .count_input:focus {
+                box-shadow: 1px 1px 3px #222;
+            }
         }
     }
 
