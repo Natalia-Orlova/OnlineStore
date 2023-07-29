@@ -847,6 +847,7 @@ a {
   top: 28px;
   right: 22px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .cart__content__products .product__item_delete:hover {
   transform: rotate(90deg);

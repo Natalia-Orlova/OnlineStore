@@ -963,9 +963,10 @@ a {
                 top: 28px;
                 right: 22px;
                 transition:all 0.3s;
+                cursor: pointer;
             }
 
-            &_delete:hover{
+            &_delete:hover {
                 // fill: $colorSelectSite;
                 transform: rotate(90deg);
             }
