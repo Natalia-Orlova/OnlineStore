@@ -1174,6 +1174,118 @@ a {
     }
 }
 
+// РЕГИСТРАЦИЯ
+
+.registration{
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        
+        &_heading {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        &_input {
+            padding: 12px 16px 16px;
+            border: 1px solid #A4A4A4;
+            margin-bottom: 20px;
+        }
+
+        &_input::placeholder {
+            color: #B1B1B1;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &_radio {
+            display: flex;
+            gap: 20px;
+            margin-top: 12px;
+            margin-bottom: 32px;
+        }
+        
+        &_radiobtn {
+            vertical-align:middle;
+            margin:-2px 10px 0 0;
+        }
+
+        &_radiotxt {
+            color: #000;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &_text {
+            color: #B1B1B1;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: -5px;
+            margin-bottom: 40px;
+        }
+            
+
+
+        &_button{
+            max-width: 167px;
+            padding: 16px 30px;
+            background-color: $colorSelectSite;
+            color: #fff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_button::after {
+            content: "\2192";
+            padding-left: 10px;
+        }
+    }
+
+    &__perks {
+        max-width: 652px;
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            list-style-type: none;
+        }
+
+        &_list li::before {
+            content: url(img/checkmark.svg);
+            // content: "\2713";
+            padding-right: 23px;
+        }
+    }
+}
+
 
 
 

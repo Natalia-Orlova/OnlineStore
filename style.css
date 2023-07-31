@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1026,6 +1027,106 @@ a {
 .cart__content__right .total__price-box .checkout_btn:hover {
   text-shadow: 1px 1px 2px #000;
   box-shadow: 1px 1px 2px #000;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+.registration__form_heading {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.registration__form_input {
+  padding: 12px 16px 16px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 20px;
+}
+.registration__form_input::-moz-placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__form_input::placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__form_radio {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.registration__form_radiobtn {
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+}
+.registration__form_radiotxt {
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__form_text {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: -5px;
+  margin-bottom: 40px;
+}
+.registration__form_button {
+  max-width: 167px;
+  padding: 16px 30px;
+  background-color: #F16D7F;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__form_button::after {
+  content: "→";
+  padding-left: 10px;
+}
+.registration__perks {
+  max-width: 652px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.registration__perks_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+}
+.registration__perks_list li::before {
+  content: url(img/checkmark.svg);
+  padding-right: 23px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
