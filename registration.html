@@ -70,8 +70,8 @@
         <section class="registration center">
             <form action="#" class="registration__form">
                     <h3 class="registration__form_heading">Your Name</h3>
-                    <input class="registration__form_input" type="text" placeholder="First Name">
-                    <input class="registration__form_input" type="text" placeholder="Last Name">
+                    <input class="registration__form_input" type="text" placeholder="First Name" required>
+                    <input class="registration__form_input" type="text" placeholder="Last Name" required>
 
                 <div class="registration__form_radio">
                     <label class="registration__form_radiotxt"><input class=" registration__form_radiobtn" type="radio" name="sex">Male</label>
@@ -79,11 +79,13 @@
                 </div>
 
                 <h3 class="registration__form_heading">Login details</h3>
-                <input class="registration__form_input" type="email" placeholder="Email">
-                <input class="registration__form_input" type="Password" placeholder="Password">
+                <input class="registration__form_input" type="email" placeholder="Email" required>
+                <input class="registration__form_input" type="Password" placeholder="Password" required>
                 <p class="registration__form_text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
 
-                <a href="#" class="registration__form_button">JOIN NOW</a>
+                <!-- <a href="#" class="registration__form_button">JOIN NOW</a> -->
+
+                <button class="registration__form_button" type="submit">JOIN NOW</button>
             
             </form>
             <div class="registration__perks">
