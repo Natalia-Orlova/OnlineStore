@@ -725,6 +725,11 @@ a {
 
 //СТРАНИЦА КАТАЛОГА
 
+@keyframes slide {
+    0%    { opacity: 0;}
+    100%  { opacity: 1;}
+  }
+
 .filter-sort {
     display: flex;
     height: 132px;
@@ -747,7 +752,9 @@ a {
     &[open] {
         background: #fff;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        animation: slide 0.6s;
     }
+    
 
     &[open] .filter__heading {
         color: $colorSelectSite;
@@ -829,6 +836,11 @@ a {
 
     &__details {
         position: relative;
+        z-index: 10;
+    }
+
+    &__details[open] {
+        animation: slide 0.6s;
     }
 
     &__summary {
