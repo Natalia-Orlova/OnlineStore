@@ -95,7 +95,7 @@ a {
     width: 232px;
     padding: 32px;
     position: absolute;
-    z-index: 10;
+    z-index: 11;
     top: 82px;
     right: -250px;
     transition: right 0.3s;
@@ -1285,15 +1285,15 @@ a {
             display: flex;
             flex-direction: column;
             gap: 16px;
-
-            list-style-type: none;
+            list-style-image: url(img/checkmark.svg);
+            padding-left: 24px;
         }
 
-        &_list li::before {
-            content: url(img/checkmark.svg);
-            // content: "\2713";
-            padding-right: 23px;
+       
+        &_li {
+            padding-left: 14px;
         }
+        
     }
 }
 
@@ -1417,7 +1417,6 @@ a {
     }
 
     //КОРЗИНА
-
     .cart__content{
         flex-direction: column;
         flex-wrap: wrap;
@@ -1449,8 +1448,31 @@ a {
             }
         }
     }
-    
+
+    //РЕГИСТРАЦИЯ
+
+    .registration {
+        gap: 23px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__form {
+            width: 48%;
+        }
+
+        &__perks {
+            width: 48%;
+            font-size: 16px;
+            &_heading {
+                margin-bottom: 10px;
+            }
+           
+        }
+    }
 }
+    
+
+   
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .center {
