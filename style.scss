@@ -575,6 +575,7 @@ a {
 
 .product-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: $gapGrid;
     margin-bottom: 128px;
@@ -1399,6 +1400,55 @@ a {
         padding-right: 16px;
     }
 
+    .product_rm { //продукт, который не отображается в планшете
+        display: none;
+    }
+
+    //ПРОДУКТ
+    .product__card {
+        margin-top: -176px;
+    }
+
+    .product-box {
+        gap: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        flex-direction: row-reverse;
+    }
+
+    //КОРЗИНА
+
+    .cart__content{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 18px;
+        padding-right: 18px;
+
+        &__buttons {
+            justify-content: center;
+            gap: 48px;
+        }
+
+        &__right {
+            width: 100%;
+            margin-top: 64px;
+            padding-left: 16px;
+            padding-right: 16px;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 16px;
+
+            .address__form {
+                width: 48%; 
+            }
+
+            .total__price-box {
+                width: 48%;
+                margin-top: 40px;
+                height: 214px;
+            }
+        }
+    }
     
 }
 
