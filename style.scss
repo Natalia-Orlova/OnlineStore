@@ -470,7 +470,7 @@ a {
 
 .product__card {
     position: relative;
-    margin-top: -240px;
+    margin-top: -160px;
     z-index: 1;
     width: 71%;
     display: flex;
@@ -1424,7 +1424,7 @@ a {
 
     //ПРОДУКТ
     .product__card {
-        margin-top: -176px;
+        margin-top: -72px;
     }
 
     .product-box {
@@ -1785,10 +1785,11 @@ a {
     
     .slider__box {
         padding-top: 85px;
-        padding-bottom: 85px;
+        margin-bottom: 85px;
 
         .slider__img {
             width: 100%; 
+            margin-bottom: 85px;
         }
     }
 
@@ -1796,6 +1797,7 @@ a {
         padding-left: 6%;
         padding-right: 6%;
         margin-bottom: 64px;
+        margin-top: -182px;
 
         &-price {
             margin-bottom: 32px;
