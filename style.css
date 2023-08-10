@@ -69,7 +69,7 @@ a {
 
 #burger {
   position: absolute;
-  left: -99999;
+  left: -99999px;
   visibility: hidden;
 }
 #burger:checked ~ .slide__menu {
@@ -814,7 +814,7 @@ a {
   width: 25px;
   height: 25px;
   color: #C4C4C4;
-  opacity: 100;
+  opacity: 1;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
