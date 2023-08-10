@@ -796,12 +796,13 @@ a {
 .swiper {
   margin-bottom: 96px;
 }
-.swiper .swiper-slide {
-  margin-bottom: 80px;
+.swiper .center-pagination {
+  display: flex;
+  justify-content: center;
 }
 .swiper .swiper-pagination {
+  position: relative;
   max-width: 284px;
-  margin-left: 37%;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -1240,6 +1241,12 @@ a {
   }
   .product_rm {
     display: none;
+  }
+  .swiper {
+    margin-bottom: 64px;
+  }
+  .swiper-slide {
+    margin-bottom: 8px;
   }
   .product__card {
     margin-top: -176px;

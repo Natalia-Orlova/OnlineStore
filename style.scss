@@ -895,15 +895,16 @@ a {
 
 //ПАГИНАЦИЯ
 .swiper {
-    margin-bottom: 96px;
+    margin-bottom: 96px; 
 
-    .swiper-slide {
-        margin-bottom: 80px;
-    }  
+    .center-pagination {
+        display: flex;
+        justify-content: center;
+    }
 
     .swiper-pagination {
+        position: relative;
         max-width: 284px;
-        margin-left: 37%;
         display: flex;
         justify-content: center;
         gap: 16px;
@@ -1409,12 +1410,16 @@ a {
         justify-content: space-between;
         padding-right: 16px;
     }
-
-    // .swiper-pagination {
-    //     margin-left: -5%;
-    // }
+    
     .product_rm { //продукт, который не отображается в планшете
         display: none;
+    }
+
+    .swiper {
+        margin-bottom: 64px;
+        &-slide {
+            margin-bottom: 8px;
+        } 
     }
 
     //ПРОДУКТ
@@ -1668,10 +1673,6 @@ a {
             font-size: 12px;
         }
     }
-
-    // .swiper-pagination {
-    //     left: ;
-    // }
 
 //РЕГИСТРАЦИЯ
     .top-head-nobcrb {
