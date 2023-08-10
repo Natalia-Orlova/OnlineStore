@@ -447,8 +447,8 @@ a {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
-  max-width: 555px;
+  line-height: 17px;
+  max-width: 554px;
   margin-bottom: 32px;
 }
 .product__card-price {
@@ -1399,5 +1399,49 @@ a {
     padding-bottom: 9px;
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .top-head {
+    padding: 24px 24px 49px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .filter-sort {
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 62px;
+  }
+  .filter__heading {
+    display: none;
+  }
+  .filter__summary {
+    padding-left: 0;
+  }
+  .sort {
+    gap: 24px;
+  }
+  .sort__heading {
+    font-size: 12px;
+  }
+  .swiper-pagination {
+    margin-left: -12%;
+  }
+  .top-head-nobcrb {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .registration {
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .registration__form {
+    width: 100%;
+  }
+  .registration__perks {
+    font-size: 16px;
+  }
+  .registration__perks_heading {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
