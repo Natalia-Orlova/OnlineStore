@@ -59,9 +59,6 @@ a {
   align-items: center;
   gap: 34px;
 }
-.header .header__link-site:hover {
-  transform: scale(1.1);
-}
 .header .header__menu:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -1157,6 +1154,102 @@ a {
 }
 .registration__perks_li {
   padding-left: 14px;
+}
+
+.cart__items {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  display: none;
+}
+.cart__items_header {
+  color: #222;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+.cart__count {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 19px;
+  padding: 2px;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  top: 19px;
+  right: 230px;
+  text-align: center;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.product__item {
+  width: 652px;
+  margin-top: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 306px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+.product__item .close {
+  background-color: #fff;
+  background-image: url(img/Del.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+}
+.product__item .cart__image {
+  width: 262px;
+}
+.product__item .product__desc {
+  width: 390px;
+  padding-top: 22px;
+  padding-left: 31px;
+}
+.product__item .product__desc .cart__product_name {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+}
+.product__item .product__desc .product__details-box {
+  color: #575757;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product__item .product__desc .product__details_price {
+  color: #EF5B70;
+}
+.product__item .product__desc .product_details {
+  color: #6F6E6E;
+}
+.product__item .product__desc .count_input {
+  width: 44px;
+  border: 1px solid #EAEAEA;
+  background-color: #fff;
+  outline: none;
+  font-size: 18px;
+  text-align: right;
+  margin-left: 24px;
+}
+.product__item .product__desc .count_input:focus {
+  box-shadow: 1px 1px 3px #222;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -1,13 +1,14 @@
 "use strict";
 
 fetch("data.json")
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        const productBox = document.querySelector('.product-box-main');
-        data.forEach(({img, name, desc, price}) => {
-            const productEl = `
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    const productBox = document.querySelector(".product-box-main");
+    data.forEach(
+      ({ img, name, desc, price, color, size, quantity, maxQuantity }) => {
+        const productEl = `
             <div class="product">
             <img src="${img}" alt="product__image" class="product__image">
             <div class="product__content">
@@ -15,7 +16,7 @@ fetch("data.json")
                 <p class="product__text">${desc}</p>
                 <p class="product__price">${price}</p>
             </div>
-            <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#cart_items" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
                     fill="white" />
@@ -28,10 +29,50 @@ fetch("data.json")
             </svg>
             Add to Cart</a>
         </div>`;
-            productBox.insertAdjacentHTML("beforeend", productEl);
-        });
 
-        // const products = document.querySelectorAll('.product');
-        
-        
-    })
+        productBox.insertAdjacentHTML("beforeend", productEl);
+      });
+
+    //ДОБАВЛЕНИЕ КАРТОЧКИ
+    const addProductBtns = document.querySelectorAll(".product__add");
+    let countProd = 1;
+    addProductBtns.forEach((element) => {
+      element.addEventListener("click", function () {
+        const cartItems = document.querySelector(".cart__items");
+        cartItems.style.display = "flex";
+        const prod = element.closest(".product");
+        const productInCart = `
+        <div class="product__item">
+            <img class="cart__image" src="${prod.querySelector('.product__image').src}" alt="product_img">
+            <button class="close"></button>
+            <div class="product__desc">
+                <h3 class="cart__product_name">${prod.querySelector('.product__name').innerHTML}</h3>
+                <div class="product__details-box">
+                    <p>Price: <span class="product__details_price">${prod.querySelector('.product__price').innerHTML}</span></p>
+                    <p>Color: <span class="product_details">Red</span></p>
+                    <p>Size: <span class="product_details">Xl</span></p>
+                    <p>Quantity: <input class="product_details count_input" type="number" min=1 max="10" value=1></p>
+                </div>
+            </div>
+        </div>
+        `;
+        cartItems.insertAdjacentHTML('beforeend', productInCart);
+        const counter = document.querySelector('.cart__count');
+        counter.style.display = 'block';
+        counter.textContent = countProd++;
+
+        //УДАЛЕНИЕ КАРТОЧКИ
+        const closeBtns = document.querySelectorAll(".close");
+        console.log(closeBtns);
+        closeBtns.forEach((elem) => {
+          elem.addEventListener("click", function (e) {
+            elem.closest(".product__item").remove();
+            if (document.querySelector('.close') === null) { // удалить раздел
+              cartItems.style.display = 'none';       // если все товары удалены
+            }
+          });
+        });
+      });
+    });
+
+  });
