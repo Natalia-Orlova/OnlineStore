@@ -1,4 +1,4 @@
-## [Посмотреть сайт](https://natalia-orlova.github.io/HTML-CSS1/)
+## [Посмотреть сайт](ссылка)
 
 <details><summary> Продолжение JavaScript
 Урок 13 </summary>
